@@ -14,4 +14,4 @@ require('./controllers/quiz.controller.server')(app)
 require('./controllers/question.controller.server')(app)
 
 app.get('/',(req,res) => res.send("hello"))
-app.listen(3000)
+app.listen(process.env.PORT||3000)
